@@ -16,7 +16,7 @@ phases:
 
   post_build:
     commands:
-      - aws s3 sync build/ $S3Bucket/ 
+      - aws s3 sync build/ s3://$S3Bucket/ 
 
 artifacts:
   files:
